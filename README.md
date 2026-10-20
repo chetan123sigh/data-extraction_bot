@@ -123,12 +123,6 @@ data-extraction-bot/
 4. The SDK parses the response into the Pydantic model.
 5. The API returns the validated data as JSON.
 
-## Security and privacy notes
-
-- Uploaded/pasted document text is sent to the OpenAI API for processing.
-- Do not use real sensitive resumes or invoices unless you are authorized to process and share them with the configured service.
-- `.env` is excluded from Git by `.gitignore`.
-- The prompt treats document text as untrusted content and tells the model not to follow instructions inside it. This is a mitigation, not a guarantee against every prompt-injection attempt.
 
 ## Scope and limitations
 
